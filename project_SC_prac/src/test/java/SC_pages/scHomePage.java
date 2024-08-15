@@ -11,6 +11,7 @@ public class scHomePage {
 	By Search_Button = By.xpath("//a[@onClick='searchTrigger()']");
 	// By alertWindow = By.xpath("//p[@class='moe-notification-message-safari']");
 	By dontAllowButton = By.xpath("//button[contains(text(),'Don')]");
+	By cartIcon = By.xpath("//li[@class='qCart']");
 	
 	public scHomePage(WebDriver driver) {
 		this.driver = driver;
@@ -37,6 +38,11 @@ public class scHomePage {
 		 * driver.findElement(alertWindow).click(); driver.switchTo().alert().accept();
 		 * }
 		 */
-
 	}
+	
+	public void clickOnCartButton() {
+		driver.findElement(cartIcon).click();
+	}
+	
+	
 }

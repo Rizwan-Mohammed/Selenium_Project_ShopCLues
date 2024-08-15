@@ -25,6 +25,7 @@ public class searchBarAndCorrespondingRow {
 	    DesiredCapabilities DC = new DesiredCapabilities();
 	    FirefoxOptions options = new FirefoxOptions();
 	    options.addArguments("-private");
+	    options.addPreference("dom.webnotifications.enabled", false);
 	    DC.setCapability("moz:firefoxoptions", options);
 	    
 	    System.setProperty("Webdriver.gecko.driver", projectPath+"Drivers/WinDrivers/geckodriver.exe");
@@ -58,9 +59,25 @@ public class searchBarAndCorrespondingRow {
 	@Then("the user is presented with list options")
 	public void the_user_is_presented_with_list_options() throws InterruptedException {
 		boolean ifExpected = driver.getPageSource().contains("Showing");
+		System.out.println(ifExpected);
 		Assert.assertTrue(ifExpected);
-		Thread.sleep(5000);
-		driver.close();
+		Assert.assertTrue("This is now passed", ifExpected);
+		Thread.sleep(8000);
+		//driver.close();
 		driver.quit();
+	}
+	
+	@When("the user clicks on the cart icon")
+	public void the_user_clicks_on_the_cart_icon() {
+	  p1.clickOnCartButton();
+	}
+
+	@Then("the user is navigated to MyCart")
+	public void the_user_is_navigated_to_my_cart() throws Exception {
+	    Boolean ifNavigatedToCart = driver.getCurrentUrl().contains("https://secure.shopclues.com/atom/acart/getcart");
+	    Assert.assertTrue(ifNavigatedToCart);
+	    //driver.close();
+	    Thread.sleep(2000);
+	    driver.quit();
 	}
 }
