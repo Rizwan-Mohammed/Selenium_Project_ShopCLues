@@ -9,11 +9,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
 public class searchBarAndCorrespondingRow {
 	
+	
 	WebDriver driver = null;
+	private static Logger logger = LogManager.getLogger(searchBarAndCorrespondingRow.class);
 	scHomePage p1;
 	
 	@Given("when the user is on the homepage of shopclues")
@@ -27,6 +32,7 @@ public class searchBarAndCorrespondingRow {
 	    options.addArguments("-private");
 	    options.addPreference("dom.webnotifications.enabled", false);
 	    DC.setCapability("moz:firefoxoptions", options);
+	    logger.info("firefox with private session, webnotifications disabled");
 	    
 	    System.setProperty("Webdriver.gecko.driver", projectPath+"Drivers/WinDrivers/geckodriver.exe");
 	    driver = new FirefoxDriver();
@@ -48,11 +54,13 @@ public class searchBarAndCorrespondingRow {
 	public void the_user_clicks_in_search_bar_and_enter_the_text() {
 				
 			p1.enterTextInSearchBox("Mens Jeans");
+			logger.atWarn();
 	}
 
 	@And("user click on search button")
 	public void user_click_on_search_button() {
 		p1.clickSearchButton();
+		logger.fatal("Fatal message");;
 	}
 
 	
@@ -65,11 +73,13 @@ public class searchBarAndCorrespondingRow {
 		Thread.sleep(8000);
 		//driver.close();
 		driver.quit();
+		logger.trace("This is trace message");
 	}
 	
 	@When("the user clicks on the cart icon")
 	public void the_user_clicks_on_the_cart_icon() {
 	  p1.clickOnCartButton();
+	  logger.info("This is the info from Logger");
 	}
 
 	@Then("the user is navigated to MyCart")

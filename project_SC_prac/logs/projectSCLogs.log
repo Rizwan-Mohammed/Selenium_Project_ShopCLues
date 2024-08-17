@@ -1,0 +1,9 @@
+[INFO ] 2024-08-17 18:40:09.831 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-17 18:40:28.917 [main] searchBarAndCorrespondingRow - Fatal message
+[INFO ] 2024-08-17 18:40:38.465 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-17 18:40:56.034 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-17 18:44:13.440 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-17 18:44:32.767 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-17 18:44:42.245 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-17 18:44:42.252 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-17 18:44:58.783 [main] searchBarAndCorrespondingRow - This is the info from Logger
