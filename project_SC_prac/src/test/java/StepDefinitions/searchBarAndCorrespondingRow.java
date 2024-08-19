@@ -89,5 +89,7 @@ public class searchBarAndCorrespondingRow {
 	    //driver.close();
 	    Thread.sleep(2000);
 	    driver.quit();
+	    // adding this line of code to see the commit going through with which user 
+	    // rizwan-mohammed or rizwan033
 	}
 }
