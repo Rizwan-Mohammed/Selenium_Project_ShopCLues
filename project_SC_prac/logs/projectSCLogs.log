@@ -7,3 +7,56 @@
 [TRACE] 2024-08-17 18:44:42.245 [main] searchBarAndCorrespondingRow - This is trace message
 [INFO ] 2024-08-17 18:44:42.252 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
 [INFO ] 2024-08-17 18:44:58.783 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 10:49:18.731 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 10:49:24.752 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 10:50:15.963 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 10:51:57.605 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 10:52:12.696 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 10:52:21.183 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 10:52:21.185 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 10:52:33.583 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:01:11.186 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:01:16.565 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:10:11.279 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 11:10:25.513 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 11:10:34.006 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 11:10:34.009 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:10:46.636 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:15:03.726 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:15:07.847 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:15:10.127 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:19:25.614 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 11:19:39.970 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 11:19:48.470 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 11:19:48.474 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:20:01.782 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:20:03.796 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:20:16.941 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:24:12.602 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 11:24:26.337 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 11:24:34.816 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 11:24:34.818 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:24:49.426 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:24:51.835 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:25:04.262 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:26:36.292 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 11:26:50.571 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 11:26:59.071 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 11:26:59.074 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:27:12.530 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:27:14.929 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:27:28.156 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:28:27.023 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 11:28:40.985 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 11:28:49.460 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 11:28:49.463 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:29:02.415 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:29:04.825 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:29:17.782 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:31:54.290 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[FATAL] 2024-08-21 11:32:07.809 [main] searchBarAndCorrespondingRow - Fatal message
+[TRACE] 2024-08-21 11:32:16.291 [main] searchBarAndCorrespondingRow - This is trace message
+[INFO ] 2024-08-21 11:32:16.294 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:32:31.108 [main] searchBarAndCorrespondingRow - This is the info from Logger
+[INFO ] 2024-08-21 11:32:33.511 [main] searchBarAndCorrespondingRow - firefox with private session, webnotifications disabled
+[INFO ] 2024-08-21 11:32:46.327 [main] searchBarAndCorrespondingRow - This is the info from Logger
