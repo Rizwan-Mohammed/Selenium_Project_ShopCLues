@@ -12,3 +12,11 @@ Feature: Search bar and corresponding row
     Given when the user is on the homepage of shopclues
     When the user clicks on the cart icon
     Then the user is navigated to MyCart
+
+
+Scenario: Navigation to My cart to Home button
+    Given when the user is on the homepage of shopclues
+    When the user clicks on the cart icon
+    And when the user is on MyCart page
+    When the user clicks on Home page button
+    Then the user is navigated to Home page

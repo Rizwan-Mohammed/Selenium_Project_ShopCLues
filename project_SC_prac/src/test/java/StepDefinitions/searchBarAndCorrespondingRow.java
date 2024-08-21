@@ -20,6 +20,7 @@ public class searchBarAndCorrespondingRow {
 	WebDriver driver = null;
 	private static Logger logger = LogManager.getLogger(searchBarAndCorrespondingRow.class);
 	scHomePage p1;
+	String baseUrl = "https://www.shopclues.com/";
 	
 	@Given("when the user is on the homepage of shopclues")
 	public void when_the_user_is_on_the_homepage_of_shopclues() throws InterruptedException {
@@ -37,7 +38,7 @@ public class searchBarAndCorrespondingRow {
 	    System.setProperty("Webdriver.gecko.driver", projectPath+"Drivers/WinDrivers/geckodriver.exe");
 	    driver = new FirefoxDriver();
 	   
-	    driver.get("https://www.shopclues.com/");
+	    driver.get(baseUrl);
 	    driver.manage().window().maximize();
 		
 	//    Alert a = driver.switchTo().alert();
@@ -88,8 +89,36 @@ public class searchBarAndCorrespondingRow {
 	    Assert.assertTrue(ifNavigatedToCart);
 	    //driver.close();
 	    Thread.sleep(2000);
-	    driver.quit();
+	   driver.quit();
 	    // adding this line of code to see the commit going through with which user 
 	    // rizwan-mohammed or rizwan033
 	}
+	
+
+@When("when the user is on MyCart page")
+public void when_the_user_is_on_my_cart_page() {
+System.out.println("user is on my cart page");
+}
+
+@When("the user clicks on Home page button")
+public void the_user_clicks_on_home_page_button() throws Exception {
+	Thread.sleep(2000);
+	p1.clickOnHomeButtonFromMyCart();
+   
+}
+
+@Then("the user is navigated to Home page")
+public void the_user_is_navigated_to_home_page() {
+	
+	Boolean IfcurrentURL = driver.getCurrentUrl().contentEquals(baseUrl);
+	if(IfcurrentURL == true) {
+		System.out.println("The test is passed");
+		logger.info("the test is passed");
+	}
+	driver.quit();
+}
+
+
+
+
 }

@@ -12,6 +12,8 @@ public class scHomePage {
 	// By alertWindow = By.xpath("//p[@class='moe-notification-message-safari']");
 	By dontAllowButton = By.xpath("//button[contains(text(),'Don')]");
 	By cartIcon = By.xpath("//li[@class='qCart']");
+	By homeIconButtonFromMyCart = By.xpath("//div[@class='logo']");
+	
 	
 	public scHomePage(WebDriver driver) {
 		this.driver = driver;
@@ -44,5 +46,7 @@ public class scHomePage {
 		driver.findElement(cartIcon).click();
 	}
 	
-	
+	public void clickOnHomeButtonFromMyCart() {
+		driver.findElement(homeIconButtonFromMyCart).click();
+	}
 }
