@@ -1,7 +1,15 @@
 package SC_pages;
 
+import java.time.Duration;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class scHomePage {
 	
@@ -13,6 +21,7 @@ public class scHomePage {
 	By dontAllowButton = By.xpath("//button[contains(text(),'Don')]");
 	By cartIcon = By.xpath("//li[@class='qCart']");
 	By homeIconButtonFromMyCart = By.xpath("//div[@class='logo']");
+	
 	
 	
 	public scHomePage(WebDriver driver) {
@@ -49,4 +58,25 @@ public class scHomePage {
 	public void clickOnHomeButtonFromMyCart() {
 		driver.findElement(homeIconButtonFromMyCart).click();
 	}
+	
+	public void signInButtonDropdownHelp() throws InterruptedException {
+		WebElement signInButton = driver.findElement(By.xpath("//body/div[4]/div[1]/div[1]/div[4]/ul[1]/li[6]/a[1]"));
+		WebElement helpAndSupportButton = driver.findElement(By.xpath("//body/div[4]/div[1]/div[1]/div[4]/ul[1]/li[6]/div[1]/div[1]/ul[1]/li[9]/a[1]"));
+		Actions action = new Actions(driver);
+		action.moveToElement(signInButton).build().perform();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(2000));
+		//wait.until(ExpectedConditions.elementToBeClickable(signInButton));
+		wait.until(ExpectedConditions.elementToBeClickable(helpAndSupportButton));
+		action.moveToElement(helpAndSupportButton).build().perform();
+		wait.until(ExpectedConditions.elementToBeClickable(helpAndSupportButton));
+		action.click(helpAndSupportButton);
+		action.build();
+		
+		
+		/*
+		 * Select sel = new Select(signInButton); sel.se
+		 * sel.selectByVisibleText("Help & Support");
+		 */		
+	}
+	
 }
